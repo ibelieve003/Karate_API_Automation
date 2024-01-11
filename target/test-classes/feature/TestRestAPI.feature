@@ -66,14 +66,15 @@ Feature: Test REST api
   Scenario: Do a rest api POST request with assertions data and request body from file
     Given path "api/users"
     And print fileFolderPath
-    And def requestBody = read(fileFolderPath + "response.json")
-    And request {"name" : "Indrajit","job" : "Tester"}
+    And def requestBody = karate.read(fileFolderPath+'request.json')
+    Then print requestBody
+    And request requestBody
     When method POST
     Then status 201
     And print response
     And print responseTime
     And print fileFolderPath
-    And def expectedOutput = read(fileFolderPath + "response.json")
+    And def expectedOutput = karate.read("response.json")
     And match response == expectedOutput
     
     
