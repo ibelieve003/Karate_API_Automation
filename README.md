@@ -1,1 +1,1 @@
-![](https://github.com/ibelieve003/Karate_API_Automation/blob/main/src/test/resources/Karate_logo.png)
+![](target\karate-reports\karate-labs-logo-ring.svg)
