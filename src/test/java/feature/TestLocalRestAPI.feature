@@ -3,7 +3,7 @@ Feature: Test local REST api
 
   Background: 
     * url "http://localhost:3000"
-    * header Accept = 'application/jso'
+    * header Accept = 'application/json'
 
 
 
