@@ -1,1 +1,1 @@
-![](target\karate-reports\karate-labs-logo-ring.svg)
+![](target/karate-reports/karate-logo.svg)
