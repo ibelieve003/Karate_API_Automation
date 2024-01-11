@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"b6d93447-679e-4e81-98b2-ec66c105bc89",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>feature.FirstTest</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-01-08 06:05:04 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:11]"><span>[1:11]</span> <span>Do a rest api GET request</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:24]"><span>[2:24]</span> <span>Do a rest api POST request</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3.1:50]"><span>[3.1:50]</span> <span>Do a rest api DELETE request</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3.2:51]"><span>[3.2:51]</span> <span>Do a rest api DELETE request</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">feature/FirstTest.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Test local REST api</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:11]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">testGet</a><a class="badge badge-primary" href="karate-tags.html">doResTest</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:11]</span>
+                <span class="scenario-name">Do a rest api GET request</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1291</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:11]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &quot;http://localhost:3000&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">210</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Accept = &#39;application/jso&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &quot;/users&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">882</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">18:05:03.198 request:
+1 &gt; GET http://localhost:3000/users
+1 &gt; Accept: application/jso
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:05:03.322 response time in milliseconds: 117
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Cache-Control: no-cache
+1 &lt; Pragma: no-cache
+1 &lt; Expires: -1
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 831
+1 &lt; ETag: W/&quot;33f-DhusJAnIecJ+zwwRn3Uwr1I4K1U&quot;
+1 &lt; Date: Mon, 08 Jan 2024 12:35:03 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+[
+  {
+    &quot;firstname&quot;: &quot;Sharmistha&quot;,
+    &quot;lastname&quot;: &quot;Das&quot;,
+    &quot;designation&quot;: &quot;Programmer Analyst&quot;,
+    &quot;id&quot;: 2082299,
+    &quot;email&quot;: &quot;sharmistha.Das2@cognizant.com&quot;
+  },
+  {
+    &quot;firstname&quot;: &quot;Souvik&quot;,
+    &quot;lastname&quot;: &quot;Singha&quot;,
+    &quot;designation&quot;: &quot;Programmer Analyst&quot;,
+    &quot;id&quot;: 2078198,
+    &quot;email&quot;: &quot;souvik.singha@cognizant.com&quot;
+  },
+  {
+    &quot;firstname&quot;: &quot;Shreenjana&quot;,
+    &quot;lastname&quot;: &quot;Chowdhury&quot;,
+    &quot;designation&quot;: &quot;Programmer Analyst&quot;,
+    &quot;id&quot;: 2078186,
+    &quot;email&quot;: &quot;shreenjana.chowdhury@cognizant.com&quot;
+  },
+  {
+    &quot;firstname&quot;: &quot;Sourav&quot;,
+    &quot;lastname&quot;: &quot;Datta&quot;,
+    &quot;designation&quot;: &quot;Associate&quot;,
+    &quot;id&quot;: 2078199,
+    &quot;email&quot;: &quot;sourav.datta3@cognizant.com&quot;
+  },
+  {
+    &quot;firstname&quot;: &quot;Somnath&quot;,
+    &quot;designation&quot;: &quot;Programmer Analyst&quot;,
+    &quot;id&quot;: 2078456,
+    &quot;email&quot;: &quot;somnath.sen2@cognizant.com&quot;,
+    &quot;lastname&quot;: &quot;Sen&quot;
+  }
+]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">177</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15">18:05:03.601 [print] [
+  {
+    &quot;firstname&quot;: &quot;Sharmistha&quot;,
+    &quot;lastname&quot;: &quot;Das&quot;,
+    &quot;designation&quot;: &quot;Programmer Analyst&quot;,
+    &quot;id&quot;: 2082299,
+    &quot;email&quot;: &quot;sharmistha.Das2@cognizant.com&quot;
+  },
+  {
+    &quot;firstname&quot;: &quot;Souvik&quot;,
+    &quot;lastname&quot;: &quot;Singha&quot;,
+    &quot;designation&quot;: &quot;Programmer Analyst&quot;,
+    &quot;id&quot;: 2078198,
+    &quot;email&quot;: &quot;souvik.singha@cognizant.com&quot;
+  },
+  {
+    &quot;firstname&quot;: &quot;Shreenjana&quot;,
+    &quot;lastname&quot;: &quot;Chowdhury&quot;,
+    &quot;designation&quot;: &quot;Programmer Analyst&quot;,
+    &quot;id&quot;: 2078186,
+    &quot;email&quot;: &quot;shreenjana.chowdhury@cognizant.com&quot;
+  },
+  {
+    &quot;firstname&quot;: &quot;Sourav&quot;,
+    &quot;lastname&quot;: &quot;Datta&quot;,
+    &quot;designation&quot;: &quot;Associate&quot;,
+    &quot;id&quot;: 2078199,
+    &quot;email&quot;: &quot;sourav.datta3@cognizant.com&quot;
+  },
+  {
+    &quot;firstname&quot;: &quot;Somnath&quot;,
+    &quot;designation&quot;: &quot;Programmer Analyst&quot;,
+    &quot;id&quot;: 2078456,
+    &quot;email&quot;: &quot;somnath.sen2@cognizant.com&quot;,
+    &quot;lastname&quot;: &quot;Sen&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">18:05:03.616 [print] 200 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print responseTime</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">18:05:03.619 [print] 117 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print responseHeaders</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">18:05:03.623 [print] {
+  &quot;X-Powered-By&quot;: [
+    &quot;Express&quot;
+  ],
+  &quot;Vary&quot;: [
+    &quot;Origin, Accept-Encoding&quot;
+  ],
+  &quot;Access-Control-Allow-Credentials&quot;: [
+    &quot;true&quot;
+  ],
+  &quot;Cache-Control&quot;: [
+    &quot;no-cache&quot;
+  ],
+  &quot;Pragma&quot;: [
+    &quot;no-cache&quot;
+  ],
+  &quot;Expires&quot;: [
+    &quot;-1&quot;
+  ],
+  &quot;X-Content-Type-Options&quot;: [
+    &quot;nosniff&quot;
+  ],
+  &quot;Content-Type&quot;: [
+    &quot;application/json; charset=utf-8&quot;
+  ],
+  &quot;Content-Length&quot;: [
+    &quot;831&quot;
+  ],
+  &quot;ETag&quot;: [
+    &quot;W/\&quot;33f-DhusJAnIecJ+zwwRn3Uwr1I4K1U\&quot;&quot;
+  ],
+  &quot;Date&quot;: [
+    &quot;Mon, 08 Jan 2024 12:35:03 GMT&quot;
+  ],
+  &quot;Connection&quot;: [
+    &quot;keep-alive&quot;
+  ],
+  &quot;Keep-Alive&quot;: [
+    &quot;timeout=5&quot;
+  ],
+  &quot;Set-Cookie&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print responseCookies</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">18:05:03.629 [print] {
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">testPost</a><a class="badge badge-primary" href="karate-tags.html">doResTest</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:24]</span>
+                <span class="scenario-name">Do a rest api POST request</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>229</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:24]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &quot;http://localhost:3000&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Accept = &#39;application/jso&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &quot;/users&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">34</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.26">{
+  &quot;firstname&quot;: &quot;Indrajit&quot;,
+  &quot;lastname&quot;: &quot;Biswas&quot;,
+  &quot;designation&quot;: &quot;Programmer Analyst&quot;,
+  &quot;id&quot;: 2078196,
+  &quot;email&quot;: &quot;indrajit.biswas@cognizant.com&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">191</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.36">18:05:03.800 request:
+1 &gt; POST http://localhost:3000/users
+1 &gt; Accept: application/jso
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 132
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;firstname&quot;:&quot;Indrajit&quot;,&quot;lastname&quot;:&quot;Biswas&quot;,&quot;designation&quot;:&quot;Programmer Analyst&quot;,&quot;id&quot;:2078196,&quot;email&quot;:&quot;indrajit.biswas@cognizant.com&quot;}
+
+18:05:03.859 response time in milliseconds: 56
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Cache-Control: no-cache
+1 &lt; Pragma: no-cache
+1 &lt; Expires: -1
+1 &lt; Access-Control-Expose-Headers: Location
+1 &lt; Location: http://localhost:3000/users/2078196
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 153
+1 &lt; ETag: W/&quot;99-ZaDQikC6GJ0UcXEBvompFw6wN2k&quot;
+1 &lt; Date: Mon, 08 Jan 2024 12:35:03 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;firstname&quot;: &quot;Indrajit&quot;,
+  &quot;lastname&quot;: &quot;Biswas&quot;,
+  &quot;designation&quot;: &quot;Programmer Analyst&quot;,
+  &quot;id&quot;: 2078196,
+  &quot;email&quot;: &quot;indrajit.biswas@cognizant.com&quot;
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.1:50]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">testDelete</a><a class="badge badge-primary" href="karate-tags.html">doResTest</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.1:50]</span>
+                <span class="scenario-name">Do a rest api DELETE request</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>83</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3.1:50]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3.1:50]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &quot;http://localhost:3000&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.1:50]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Accept = &#39;application/jso&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &quot;/users/&quot;+Emplyee_ID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">27</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method DELETE</span>
+      </div>
+    </div>
+    <div class="time-cell passed">51</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.43">18:05:03.950 request:
+1 &gt; DELETE http://localhost:3000/users/2078456
+1 &gt; Accept: application/jso
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:05:03.987 response time in milliseconds: 36
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Cache-Control: no-cache
+1 &lt; Pragma: no-cache
+1 &lt; Expires: -1
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 2
+1 &lt; ETag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+1 &lt; Date: Mon, 08 Jan 2024 12:35:03 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.45">18:05:03.997 [print] {
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.46">18:05:03.998 [print] 200 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.2:51]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">testDelete</a><a class="badge badge-primary" href="karate-tags.html">doResTest</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.2:51]</span>
+                <span class="scenario-name">Do a rest api DELETE request</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>27</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3.2:51]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3.2:51]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &quot;http://localhost:3000&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.2:51]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Accept = &#39;application/jso&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &quot;/users/&quot;+Emplyee_ID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method DELETE</span>
+      </div>
+    </div>
+    <div class="time-cell passed">22</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.43">18:05:04.031 request:
+1 &gt; DELETE http://localhost:3000/users/2078196
+1 &gt; Accept: application/jso
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:05:04.048 response time in milliseconds: 16
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Cache-Control: no-cache
+1 &lt; Pragma: no-cache
+1 &lt; Expires: -1
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 2
+1 &lt; ETag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+1 &lt; Date: Mon, 08 Jan 2024 12:35:04 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.45">18:05:04.051 [print] {
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.46">18:05:04.052 [print] 200 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
