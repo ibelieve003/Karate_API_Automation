@@ -6,10 +6,9 @@ Feature: Test REST api
     * header Accept = 'application/json'
     * def projectPath = karate.properties['user.dir']
     Then print projectPath
-    * def fileFolderPath = projectPath + "\\src\\main\\resources\\"
+    * def fileFolderPath = projectPath + "/src/main/resources/"
 
   
-  #<-- parameterized get request -->
   @testGet
   Scenario: Do a rest api parameterized GET request
   Given path "api/users"
@@ -22,7 +21,8 @@ Feature: Test REST api
   And print responseHeaders
   And print responseCookies
   
-  #parameterized get request with assertions
+  
+  
   @testGet
   Scenario: Do a rest api GET request with assertions
   Given path "api/users"
@@ -36,7 +36,8 @@ Feature: Test REST api
   And match $.data[0].first_name == "Michael"
   And print response.data[0]
   
-  #post request with assertions
+  
+  
   @testPost
   Scenario: Do a rest api POST request with assertions
   Given path "api/users"
@@ -47,35 +48,49 @@ Feature: Test REST api
   And print responseTime
   And match response == {"name": "Indrajit", "job": "Tester", "id": "#string","createdAt": "#ignore"}
   
-  # post request with assertions data from file
+  
+  
   @testPost
   Scenario: Do a rest api POST request with assertions data from file
-    Given path "api/users"
-    And request {"name" : "Indrajit","job" : "Tester"}
-    When method POST
-    Then status 201
-    And print response
-    And print responseTime
-    #And print fileFolderPath
-    #And def expectedOutput = read(fileFolderPath + "response.json")
-    #And match response == expectedOutput
-    And match response == read("./response.json")
-
-  # post request with assertions data and request body from file
+  Given path "api/users"
+  And request {"name" : "Indrajit","job" : "Tester"}
+  When method POST
+  Then status 201
+  And print response
+  And print responseTime
+  And def expectedOutput = read("response.json")
+  And match response == expectedOutput
+  
+  
+  
   @testPost
   Scenario: Do a rest api POST request with assertions data and request body from file
     Given path "api/users"
-    And print fileFolderPath
-    And def requestBody = karate.read(fileFolderPath+'request.json')
-    Then print requestBody
+    And def requestBody = read('request.json')
+    And print requestBody
     And request requestBody
     When method POST
     Then status 201
     And print response
     And print responseTime
-    And print fileFolderPath
-    And def expectedOutput = karate.read("response.json")
-    And match response == expectedOutput
-    
-    
-   
+    And def expectedOutput = read("response.json")
+    Then match response == expectedOutput
+
+
+
+  @testPost
+  Scenario: Do a rest api POST request with assertions data and request body from file and change request value
+    Given path "api/users"
+    And def requestBody = read('request.json')
+    Then print requestBody
+    And set requestBody.job = 'engineer'
+    And print requestBody
+    And request requestBody
+    When method POST
+    Then status 201
+    And print response
+    And print responseTime
+    And def expectedOutput = read("response.json")
+    And set expectedOutput.job = 'engineer'
+    And print expectedOutput
+    Then match response == expectedOutput
