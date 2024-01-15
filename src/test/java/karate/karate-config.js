@@ -1,16 +1,14 @@
 function fn() {
-    console.log("Hello world");
-    var config = {
-        name : "Indajit",
-        global_baseURL : "https://reqres.in/"
-    };
+    
+    var config = karate.read('classpath:configurations.yml');
 
     var env = karate.env
     karate.log("Env is : ", env);
 
+    karate.log("Setting "+env+" base url: "+config[env].global_baseURL); 
 
-
-    karate.configure('connectTimeout',5000);
-    karate.configure('readTimeout', 5000);
-    return config;
+    karate.configure('connectTimeout',config[env].connectTimeout);
+    karate.configure('readTimeout', config[env].readTimeout);
+    
+    return config[env];
 }

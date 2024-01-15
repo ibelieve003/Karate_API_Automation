@@ -1,0 +1,12 @@
+qa:
+ global_baseURL: https://reqres.in/api
+ global_contentType: application/json
+ global_apiKey:
+ global_accessToken:
+ connectTimeout: 5000
+ readTimeout: 5000
+ 
+ 
+ name: Indrajit
+ job: Tester
+ 
