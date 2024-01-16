@@ -1,5 +1,5 @@
 @doKarateRestTest
-Feature: Test REST api
+Feature: Test REST api in karate
 #
   #Background: 
     #* url "https://reqres.in/"

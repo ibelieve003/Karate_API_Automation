@@ -10,3 +10,4 @@ Feature: Config.js file demo
   And param page = 2
   When method GET
   Then status 200
+  And print response
